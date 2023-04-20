@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="forms.css">
+    <meta charset="utf-8" />
+    <title>Job application form</title>
+</head>
+<body>
+<h3>complete the form below to apply.</h3> <hr>
+<form action="/action_page.php" target="_self" 
+method="get" autocomplete="on" novalidate> 
+<!--this action atribute defines where the form data is sent after submission.
+while the target defines where to display response after submission.
+method defines the http method through which the form is submitted
+autocmoplete is when the browser automaticallu completes values based on values the user has ebtered before
+novalidate attribute, when present specifies that the data in the form should not be validated before submission -->
+<label for="fname"> First name</label>
+<input type="text" id="fname" name="fname">
+<label for="lname"> Last name</label>
+<input type="text" id="lname" name="lname"> <br>
+
+<p>Gender:</p> <br>
+<input type="radio" id="genderM" name="gender" value="male">
+<label for="genderM"> Male </label> <br>
+<input type="radio" id="genderF" name="gender" value="female">
+<label for="genderF"> female</label> <br>
+
+<p>list of positions you have ever assumed.</p>
+<input type="checkbox" id="cp" name="position" value="class prefect">
+<label for="cp"> class prefect</label><br>
+<input type="checkbox" id="srp" name="position" value="src president">
+<label for="srp">SRC president </label><br>
+<input type="checkbox" id="sp" name="position" value="school prefect">
+<label for="sp">school prefect</label><br>
+
+<p>programmme of study:</p>
+<label for="pro"></label>
+<select id="pro" name="programme" size="10">
+<option value="act">Actuarial science</option>
+<option value="comp" selected>computer Science</option>
+<option value="eng">computer engineering</option>
+<option value="pet">petroleum engineering</option>
+<option value="bio">biological science</option>
+</select><br>
+
+
+<input type="submit" value="submit">
+</form >
+
+</body>
+</html>
